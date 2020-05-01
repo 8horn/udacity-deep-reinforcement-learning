@@ -35,3 +35,6 @@ test the agent, while the python scripts are divided based by their functions:
 - ```ReplayBuffer.py``` - Storage where agent's past experiences are held
 - ```SumTree.py``` - Binary tree data structure that holds agent's experiences, together with thier error rates for prioritized experience buffer
 
+### Implementation
+
+Implementation is described in ```Report.md```
