@@ -35,7 +35,7 @@ Hyperparameters used in the algorithm are as follows:
 
 The following plots shows rewards collected by the agent over time (episodes)
 
-![rewards over time]()
+![rewards over time](rewards-plot.jpg)
 
 ### Ideas for Future Work
 
