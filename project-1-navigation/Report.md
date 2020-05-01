@@ -37,7 +37,24 @@ Hyperparameters used in the algorithm are as follows:
 
 The following plots shows rewards collected by the agent over time (episodes)
 
-![rewards over time](rewards-plot.jpg)
+![rewards over time](reward-scores.png)
+
+```python
+Episode 100/2000. | Average Score: 0.31.
+Episode 200/2000. | Average Score: 1.34.
+Episode 300/2000. | Average Score: 3.26.
+Episode 400/2000. | Average Score: 4.48.
+Episode 500/2000. | Average Score: 6.12.
+Episode 600/2000. | Average Score: 7.48.
+Episode 700/2000. | Average Score: 10.06.
+Episode 800/2000. | Average Score: 9.95.
+Episode 900/2000. | Average Score: 11.28.
+Episode 1000/2000. | Average Score: 12.0.
+Episode 1100/2000. | Average Score: 12.42.
+Episode 1200/2000. | Average Score: 12.79.
+Episode 1300/2000. | Average Score: 12.82.
+Episode 1400/2000. | Average Score: 13.22.
+```
 
 ### Ideas for Future Work
 
