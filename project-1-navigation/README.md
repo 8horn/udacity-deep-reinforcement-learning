@@ -29,13 +29,12 @@ What is also required is the Banana.exe application built in Unity - please refe
 
 ### Instructions
 
-There are 4 python scripts and 1 Jupyter Notebook in this project. Jupyter notebook contains all the code necessary to train and
+There are 3 python scripts and 1 Jupyter Notebook in this project. Jupyter notebook contains all the code necessary to train and
 test the agent, while the python scripts are divided based by their functions:
 
 - ```Agent.py``` - Class representing Agent that learn how to behave in given environment
 - ```QNetwork.py``` - Deep Learning-based architecture that acts as function approximation for an agent to learn which action to take current state
 - ```ReplayBuffer.py``` - Storage where agent's past experiences are held
-- ```SumTree.py``` - Binary tree data structure that holds agent's experiences, together with thier error rates for prioritized experience buffer
 
 ### Implementation
 
