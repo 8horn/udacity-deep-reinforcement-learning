@@ -24,12 +24,12 @@ self.model = nn.Sequential(
 
 Hyperparameters used in the algorithm are as follows:
 
-- ```capacity``` - Amount of experiences that can be stored in the memory buffer
-- ```batch_size``` - Size of each minibatch that are used for training the network to learn optimal action given state. Those are sampled from memory buffer.
-- ```lr``` - Learning rate at which the model learns
-- ```gamma``` - Discount factor which specifies how important (or not) are the past rewards
-- ```tau``` - Used when updating the target network with parameters from local network, so that they are not equally the same
-- ```learn_every_n_steps``` - Agent will only learn after taking this many actions.
+- ```capacity = 1e5``` - Amount of experiences that can be stored in the memory buffer
+- ```batch_size = 64``` - Size of each minibatch that are used for training the network to learn optimal action given state. Those are sampled from memory buffer.
+- ```lr = 5e4``` - Learning rate at which the model learns
+- ```gamma = 0.999``` - Discount factor which specifies how important (or not) are the past rewards
+- ```tau = 1e-3``` - Used when updating the target network with parameters from local network, so that they are not equally the same
+- ```learn_every_n_steps = 10``` - Agent will only learn after taking this many actions.
 
 ### Plot of Rewards
 
