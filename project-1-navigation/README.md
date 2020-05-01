@@ -7,6 +7,8 @@ Project 1 from Udacity cource on Deep Reinforcement Learning.
 The aim is to train an agent to navigate around 3d environment and collect how many yellow bananas as possible,
 Each yellow banana is worth 1 point. Picking up blue bananas esult in a penalty of -1.
 
+![Gif showing the environment and how agent acts](banana-example.gif)
+
 ### Environment
 
 The state has 37 dimensions and contains agent's velocity, along with ray-based perception of objects around the agent's forward direction.
