@@ -38,3 +38,10 @@ test the agent, while the python scripts are divided based by their functions:
 ### Implementation
 
 Implementation is described in ```Report.md```
+
+### Inspirations
+
+Inspiried (and heavily adopted to suit my coding style) by the following git repositories and blog posts:
+
+- https://towardsdatascience.com/proximal-policy-optimization-tutorial-part-2-2-gae-and-ppo-loss-fe1b3c5549e8
+- https://github.com/nikhilbarhate99/PPO-PyTorch
