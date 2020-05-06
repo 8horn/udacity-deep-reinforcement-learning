@@ -33,22 +33,17 @@ Hyperparameters used in the algorithm are as follows:
 
 ### Plot of Rewards
 
-The following plots shows rewards collected by the agent over time (episodes). The environment was solved in 405 episodes.
+The following plots shows rewards collected by the agent over time (episodes). The environment was solved in 218 episodes.
 
 ![rewards over time](score-over-time.png)
 
 ```python
-Episode   0/500 | Average Score: 0.39
-Episode  50/500 | Average Score: 2.59
-Episode 100/500 | Average Score: 5.41
-Episode 150/500 | Average Score: 10.62
-Episode 200/500 | Average Score: 14.82
-Episode 250/500 | Average Score: 18.74
-Episode 300/500 | Average Score: 22.64
-Episode 350/500 | Average Score: 26.4
-Episode 400/500 | Average Score: 29.73
-Episode 405/500 | Average Score: 30.03
-Environment solved in 405!
+Episode 0/500 | Average Score: 0.24
+Episode 50/500 | Average Score: 3.54
+Episode 100/500 | Average Score: 6.78
+Episode 150/500 | Average Score: 14.31
+Episode 200/500 | Average Score: 25.71
+Environment solved in 218!
 ```
 
 ### Ideas for Future Work
