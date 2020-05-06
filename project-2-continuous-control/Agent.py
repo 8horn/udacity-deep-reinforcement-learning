@@ -6,7 +6,7 @@ from collections import namedtuple
 
 trajectory = namedtuple('Trajectory', field_names=['state', 'action', 'reward', 'mask', 'log_prob', 'value'])
 
-def act(env, model, state):
+def act(env, model, state, brain_name):
    # Pick an action
    value, dist = model(torch.FloatTensor(state))
    action = dist.sample()
@@ -28,7 +28,7 @@ def act(env, model, state):
    return next_state, done, t
 
 
-def calculate_gae_returns(trajectories, next_value, num_agents, gamma=0.99, gae_tau=0.95):
+def calculate_gae_returns(trajectories, num_agents, gamma=0.99, gae_tau=0.95):
    processed_trajectories = [None] * (len(trajectories)-1)
    gae = 0.
    
