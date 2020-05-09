@@ -27,7 +27,7 @@ The environment is considered solved, when the average (over 100 episodes) of th
 ### Getting Started
 
 Ensure ```Python 3.6``` and ```PyTorch 1.5``` along with ```UnityML-Agents``` and ```OpenAI Gym``` are installed in your environment. 
-What is also required is the Banana.exe application built in Unity - please refer to Udacity course for more details.
+What is also required is the Tennis.exe application built in Unity - please refer to Udacity course for more details.
 
 ### Instructions
 
