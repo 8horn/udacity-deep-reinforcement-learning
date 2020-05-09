@@ -59,28 +59,3 @@ class PPO_Agent():
       # Reset collected raw trajectories and accumulate processed experiences
       self.trajectories = []
       self.processed_trajectories += current_trajectories
-
-   # def learn(self, batcher, epsilon_clip=0.2, gradient_clip=10, beta=0.001, critic_discount=1., num_epochs=5):
-   #    self.model.train()
-   #    for _ in range(num_epochs):
-   #       for states, actions, old_log_probs, returns, advantages in batcher:
-   #          # Get updated values from policy
-   #          values, dist = self.model(states) 
-   #          new_log_probs = dist.log_prob(actions)
-   #          entropy = dist.entropy()
-
-   #          # Calculate ratio and clip, so that learning doesn't change new policy much from old 
-   #          ratio = (new_log_probs - old_log_probs).exp()
-   #          clip = torch.clamp(ratio, 1 - epsilon_clip, 1 + epsilon_clip)
-   #          clipped_surrogate = torch.min(ratio*advantages, clip*advantages)
-
-   #          # Get losses
-   #          actor_loss = -torch.mean(clipped_surrogate) - beta * entropy.mean()
-   #          critic_loss = torch.mean(torch.square((returns - values)))
-   #          losses = critic_loss * critic_discount + actor_loss
-
-   #          # Do the optimizer step
-   #          self.optimizer.zero_grad()
-   #          losses.backward()
-   #          nn.utils.clip_grad_norm_(self.model.parameters(), gradient_clip)
-   #          self.optimizer.step()
