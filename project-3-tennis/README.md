@@ -26,8 +26,36 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 ### Getting Started
 
-Ensure ```Python 3.6``` and ```PyTorch 1.5``` along with ```UnityML-Agents``` and ```OpenAI Gym``` are installed in your environment. 
-What is also required is the Tennis.exe application built in Unity - please refer to Udacity course for more details.
+It is recommended to create new environment with all necessary dependencies to run and train the agents. The instructions below demonstrate the steps how to do this, as advised by Udacity:
+
+1. Create (and activate) a new environment with Python 3.6.
+
+	- __Linux__ or __Mac__: 
+	```bash
+	conda create --name drlnd python=3.6
+	source activate drlnd
+	```
+	- __Windows__: 
+	```bash
+	conda create --name drlnd python=3.6 
+	activate drlnd
+	```
+	
+2. Follow the instructions in [this repository](https://github.com/openai/gym) to perform a minimal install of OpenAI gym.  
+	- Next, install the **classic control** environment group by following the instructions [here](https://github.com/openai/gym#classic-control).
+	- Then, install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).
+	
+3. Clone the repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
+```bash
+git clone https://github.com/udacity/deep-reinforcement-learning.git
+cd deep-reinforcement-learning/python
+pip install .
+```
+
+4. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `drlnd` environment.  
+```bash
+python -m ipykernel install --user --name drlnd --display-name "drlnd"
+```
 
 ### Instructions
 
@@ -37,6 +65,15 @@ test the agent, while the python scripts are divided based by their functions:
 - ```ActorCritic.py``` - Torch module holding Actor-Critic model that helps agent pick the most optimal action given environment state
 - ```Agent.py``` - Proximal Policy Optimization agent, deals with choosing appropriate action given state, processes environment reaction and stores trajectories
 - ```MultiAgent.py``` - Main class that wraps multiple ```Agent``` and learns a single ```ActorCritic``` model based on collected, shared experiences across all agents.
+
+To run the code in Jupyter notebook, it is necessary to provide required Unity environment. Built binaries for this project - tennis - can be downloaded from the link below:
+
+- Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip)
+- Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip)
+- Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip)
+- Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip)
+
+Once downlaoded and unzipped, please ensure the the cell in the ```Tennis.ipynb``` notebook which loads the environment point the the unzipped .exe file.
 
 ### Implementation
 
