@@ -45,7 +45,7 @@ It is recommended to create new environment with all necessary dependencies to r
 	- Next, install the **classic control** environment group by following the instructions [here](https://github.com/openai/gym#classic-control).
 	- Then, install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).
 	
-3. Clone the repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
+3. Clone the Udacity repository for the deep reinforcement course and navigate to the `python/` folder.  Then, install the remaining repositories necessariy to run this project. These include ```PyTorch``` deep learning library among many others.
 ```bash
 git clone https://github.com/udacity/deep-reinforcement-learning.git
 cd deep-reinforcement-learning/python
